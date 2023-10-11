@@ -1,0 +1,22 @@
+Private Sub CommandButton1_Click()
+    Dim r As Range, rr As Range
+    Set rr = Selection
+    For Each r In rr
+        r.Select
+        Application.SendKeys "{F2}"
+        Application.SendKeys "{ENTER}"
+        DoEvents
+    Next
+End Sub
+'--------------------------------------------
+
+Sub F2_Enter()
+    Dim r As Range, rr As Range
+    Set rr = Selection
+    For Each r In rr
+        r.Select
+        Application.SendKeys "{F2}"
+        Application.SendKeys "{ENTER}"
+        DoEvents
+    Next
+End Sub
